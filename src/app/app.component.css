@@ -1,0 +1,38 @@
+/* app.component.css */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.scanner-container {
+  margin: 20px 0;
+  position: relative;
+}
+
+.scanner {
+  max-width: 500px;
+  margin: 0 auto;
+  border: 2px solid #333;
+}
+
+.result {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

@@ -7,5 +7,16 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'qr-scanner-app';
+  qrResultString: string = '';
+  scannerEnabled: boolean = true;
+
+  onScanSuccess(result: string) {
+    this.qrResultString = result;
+    this.scannerEnabled = false; // スキャン後にカメラをオフにする
+  }
+
+  restartScanner() {
+    this.scannerEnabled = true;
+    this.qrResultString = '';
+  }
 }
