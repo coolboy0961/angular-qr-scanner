@@ -1,6 +1,8 @@
-<!-- app.component.html -->
 <div class="container">
   <h1>QRコードスキャナー</h1>
+
+  <!-- カメラデバイスの数を表示 -->
+  <p>利用可能なカメラデバイスの数: {{ cameraCount }}</p>
 
   <div *ngIf="scannerEnabled" class="scanner-container">
     <zxing-scanner
